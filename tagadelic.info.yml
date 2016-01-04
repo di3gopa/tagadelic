@@ -1,0 +1,6 @@
+name: Tagadelic
+type: module
+description: 'Tagadelic makes weighted tag clouds from any-ol weighted list.'
+package: Taxonomy
+core: 8.x
+configure: tagadelic.form

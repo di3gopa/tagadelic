@@ -1,0 +1,7 @@
+tagadelic_settings.form:
+  path: 'admin/structure/tagadelic_taxonomy'
+  defaults:
+    _form: 'Drupal\tagadelic\Form\TagadelicSettingsForm'
+    _title: 'Tag Cloud'
+  requirements:
+    _permission: 'administer site configuration'
