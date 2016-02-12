@@ -1,5 +1,5 @@
 # Tagadelic #
-Tagadelic provides a block to display a tag cloud of the mosed used terms on the website.
+Tagadelic provides a block to display a tag cloud of the most used terms on the website.
 
 This is a port of https://www.drupal.org/project/tagadelic to Drupal 8
 
