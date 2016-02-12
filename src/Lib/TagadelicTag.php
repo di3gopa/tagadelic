@@ -6,6 +6,8 @@
  */
 
 namespace Drupal\tagadelic\Lib;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
 
 /**
  * class TagadelicTag
@@ -42,7 +44,6 @@ class TagadelicTag {
    *  turns the tag into an HTML link to its source.
    */
   public function __ToString() {
-    $this->clean();
 
     $attributes = $options = array();
 
@@ -51,7 +52,14 @@ class TagadelicTag {
 
     if (!empty($attributes)) $options["attributes"] = $attributes;
 
-    return $this->drupal()->l($this->name, $this->link, $options);
+    //$url = Url::fromUri('internal:' . $this->link);
+    $url = URL::fromRoute('entity.taxonomy_term.canonical', array('taxonomy_term' => $this->id));
+
+    $link = Link::fromTextAndUrl($this->name, $url);
+    $link = $link->toRenderable();
+    $link['#attributes'] = $attributes;
+
+    return (string)render($link);
   }
 
   /**

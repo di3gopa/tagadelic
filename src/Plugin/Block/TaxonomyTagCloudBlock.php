@@ -25,8 +25,10 @@ class TaxonomyTagCloudBlock extends BlockBase {
     // TODO: Make number of tags configurable on admin interface.
     $cloud = $this->getCloud(12);
 
-
-    return 'Tag cloud';
+    return array(
+      '#theme' => 'tagadelic_taxonomy_cloud',
+      '#tags' => $cloud,
+    );
   }
 
   /**
