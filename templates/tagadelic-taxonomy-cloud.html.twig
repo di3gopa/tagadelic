@@ -1,6 +1,5 @@
 <ul class="tag-cloud">
     {% for tag in tags %}
-        <li>{{ tag }}</li>
+        <li>{{ tag | raw }}</li>
     {% endfor %}
 </ul>
-
