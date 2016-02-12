@@ -1,0 +1,5 @@
+tag_cloud:
+  version: 1.x
+  css:
+    theme:
+      css/tagadelic-taxonomy-cloud.css: {}
