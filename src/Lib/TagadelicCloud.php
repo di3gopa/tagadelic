@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * @file
+ * Contains \Drupal\tagadelic\Lib\TagadelicCloud.
+ */
+
+namespace Drupal\tagadelic\Lib;
+
 /**
  * class TagadelicCloud
  *   TagadelicCloud, contains a list of tags and methods to manipulate
