@@ -28,6 +28,11 @@ class TaxonomyTagCloudBlock extends BlockBase {
     return array(
       '#theme' => 'tagadelic_taxonomy_cloud',
       '#tags' => $cloud,
+      '#attached' => array(
+        'library' =>  array(
+          'tagadelic/tag_cloud',
+        )
+      ),
     );
   }
 

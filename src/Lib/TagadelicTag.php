@@ -45,6 +45,7 @@ class TagadelicTag {
    */
   public function __ToString() {
 
+    // TODO: This needs to be refactored, we don't need to use the magic method anymore, we can send the render array to the template.
     $attributes = $options = array();
 
     if (!empty($this->description)) $attributes["title"]   = $this->description;
